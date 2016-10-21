@@ -1,37 +1,38 @@
-var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var autoprefixer = require('autoprefixer');
+import webpack from 'webpack';
+import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import autoprefixer from 'autoprefixer';
 
 var config = {
     entry: [
-        './app/main.jsx',
-        'webpack/hot/dev-server',
-        'webpack-dev-server/client?http://localhost:8080'
-    ],
-    output:{
+            './app/main.js',
+            'webpack/hot/dev-server',
+            'webpack-hot-middleware/client'
+           ],
+    output: {
         path: './public/js',
-        publicPath: 'http://localhost:8080/scripts/',
+        publicPath: 'http://localhost:3000/scripts/',
         filename: 'bundle.js'
     },
-    module:{
+    module: {
         preloaders:[
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: 'js-hint'
+                loader: 'js-hint-loader'
             }
         ],
-        loaders:[
+        loaders: [
             {
-                test: [/\.es6$/, /\.js$/, /\.jsx$/],                
+                test: [/\.es6$/, /\.js$/],                
                 loaders: ['react-hot', 'babel'],
-                exclude: /node_modules/,              
+                exclude: /node_modules/     
             },
-            
             {
-                test: [/\.scss$/],
-                loader: 'style!css?sourceMap!postcss!sass?sourceMap',
-                exclude: /node_modules/
+                test: /\.scss$/,
+                loader: ExtractTextPlugin.extract({
+                    fallbackLoader: 'style',
+                    loader: 'style!css?sourceMap!postcss!sass?sourceMap'
+                })
             }
         ]
     },
@@ -42,20 +43,15 @@ var config = {
                        './node_modules/motion-ui'
                       ]
     },
-    devServer: {
-        contentBase: './public',
-        inline: true,
-        hot: true
-    },
     resolve: {
-        extensions:['', '.js', '.es6', '.jsx', '.json', '.scss']
+        extensions:['', '.js', '.es6', '.json', '.scss']
     },
+    target: 'web',
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin(),
         new ExtractTextPlugin('./public/css/bundle.css')
     ],
-    target: 'web',
     reload: true
 }
 

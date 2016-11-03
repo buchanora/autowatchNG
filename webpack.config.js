@@ -32,6 +32,11 @@ var config = {
                 test: [/\.scss$/],
                 loader: 'style!css?sourceMap!postcss!sass?sourceMap',
                 exclude: /node_modules/
+            },
+            {
+                test: [/\.css$/],
+                loader: ExtractTextPlugin.extract('style'),
+                exclude: /node_modules/
             }
         ]
     },

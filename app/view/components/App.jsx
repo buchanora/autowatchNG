@@ -11,7 +11,7 @@ import OffScreen from "./layout/OffScreen";
 export default class App extends React.Component {
     render(){
         return (
-            <div>
+            <div className="app-wrapper">
                 <Header/>
                     {this.props.children}
                 <Footer/>

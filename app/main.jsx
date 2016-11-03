@@ -17,7 +17,9 @@ import Routes from "./view/routes";
 //import Manage from "./view/components/page/Manage";
 
 //import entry module for "Foundation's" SCSS 
-import "./core.scss";
+import "./main.scss";
+import "./vendor-scss/fontawesome/font-awesome.scss";
+import "./vendor-scss/icofont/icofont.scss";
 
 //Grab the appRoot Element from the HTML
 const appRoot = document.getElementById("root");

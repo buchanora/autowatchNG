@@ -1,0 +1,18 @@
+.button-link{
+    display: block;
+    padding: 10px 15px;
+    border-radius: 100px;
+    font-weight: $global-weight-bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.button-solid{
+    background-color: #fff;
+    color: $color-blue-bright-0;
+    border: 2px solid #fff;
+}
+.button-hollow{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff
+}

@@ -1,0 +1,42 @@
+.header{
+    position: relative;
+    background-color: $color-blue-bright-0;
+    max-height: 100px;
+//    display: flex;
+//    justify-content: space-between;
+//    align-content: center;
+}
+//make the three header columns of equal width
+.header-logo-container{
+    max-width: 50%;
+    margin: 0 auto;
+}
+.header-logo{
+    display:block;
+    width: 80px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.social-bar,
+.header-right{
+    position: absolute;
+//    flex-grow: 1; 
+}
+.social-bar{
+    display: flex;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+.social-bar li{
+    display: none;
+    list-style-type: none;
+    flex-grow: 1;
+}
+.header-right{
+    right: 15px;
+    top: 50%;
+    margin-top: -15px;
+}
+.menu-icon{
+    height: 30px;
+}

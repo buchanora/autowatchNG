@@ -1,0 +1,75 @@
+//Import Google Fonts
+//@import url(http://fonts.googleapis.com/css?family=Armata|Michroma);
+
+//Define Custom Colors
+$color-blue-bright-0: #0e8ce2;
+$color-blue-deep-0: #006d93;
+$color-blue-dark-0: #004656;
+$color-blue-faint-0: #c0ecff;
+
+//Define font scale
+$font-size-default: 100%;
+$font-size-up-1: 1.2rem;
+$font-size-up-2: 1.6rem;
+$font-size-up-3: 1.8rem;
+$font-size-down-1: 0.8rem;
+$font-size-down-2: 0.6rem;
+$font-size-down-3: 0.5rem;
+
+//Define other utility variables
+$global-rounded: 50%;
+
+//Import Foudation Configs
+@import "vendor-scss/foundation/core";
+
+//Import Component Manifest
+@import "view/components/manifest";
+
+html, body {
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+//Shared utility styles
+.wrapper{
+    width: 100%;
+}
+.page{
+    height: 100%;
+}
+// Headline styles
+.kicker{
+    display: block;
+    font-size: $font-size-up-1;
+    font-weight: $global-weight-bold;
+    line-height: 1.2;
+    padding-bottom: 15px;
+}
+.banner{
+    display: block;
+    font-weight: $global-weight-bold;
+    font-size: $font-size-up-3;
+    line-height: 1.2;
+    padding-bottom: 15px;
+}
+.deck{
+    display: block;
+    font-size: $font-size-up-2;
+    font-weight: $global-weight-bold;
+    line-height: 1.2;
+    padding-bottom: 15px;
+}
+.rider{
+    display: block;
+    font-size: $font-size-up-1;
+    line-height: 1.4;
+    padding-bottom: 15px;
+}
+
+
+[vc_row full_width="stretch_row_content_no_spaces" type="full_width_content" bg_position="left top" bg_repeat="no-repeat" parallax_bg="" overlay="" video_bg="" text_color="light" transparency="" borders="" arrow_bottom="" arrow_top="" el_id="dgk-what"][vc_column width="1/1" enable_animation="" animation="none" centered_cont="" centered_cont_vertical="" column_padding="" background_color="" background_color_opacity="1" background_image="" font_color="" el_class=""][media type="image" alignment="left" animation="none" link="#" image="62"][/vc_column][/vc_row][vc_row full_width="stretch_row_content_no_spaces" type="full_width_content" bg_position="center center" bg_repeat="no-repeat" parallax_bg="" overlay="" video_bg="" text_color="dark" transparency="" borders="" arrow_bottom="" arrow_top="" el_id="dgk-who"][vc_column width="1/1" enable_animation="" animation="none" centered_cont="" centered_cont_vertical="" column_padding="" background_color="" background_color_opacity="1" background_image="" font_color="" el_class=""][vc_column_text]
+[/vc_column_text][/vc_column][/vc_row][vc_row full_width="stretch_row_content_no_spaces" type="full_width_content" bg_position="center center" bg_repeat="no-repeat" parallax_bg="" overlay="" video_bg="" text_color="dark" transparency="" borders="" arrow_bottom="" arrow_top="" el_id="dgk-how"][vc_column width="1/1" enable_animation="" animation="none" centered_cont="" centered_cont_vertical="" column_padding="" background_color="" background_color_opacity="1" background_image="" font_color="" el_class=""][vc_column_text]
+[/vc_column_text][/vc_column][/vc_row][vc_row full_width="stretch_row_content_no_spaces" type="full_width_content" bg_position="center center" bg_repeat="no-repeat" parallax_bg="" overlay="" video_bg="" text_color="dark" transparency="" borders="" arrow_bottom="" arrow_top="" el_id="dgk-why"][vc_column width="1/1" enable_animation="" animation="none" centered_cont="" centered_cont_vertical="" column_padding="" background_color="" background_color_opacity="1" background_image="" font_color="" el_class=""][vc_column_text]
+[/vc_column_text][/vc_column][/vc_row][vc_row full_width="stretch_row_content_no_spaces" type="full_width_content" bg_position="center center" bg_repeat="no-repeat" parallax_bg="" overlay="" video_bg="" text_color="dark" transparency="" borders="" arrow_bottom="" arrow_top="" el_id="dgk-where"][vc_column width="1/1" enable_animation="" animation="none" centered_cont="" centered_cont_vertical="" column_padding="" background_color="" background_color_opacity="1" background_image="" font_color="" el_class=""][vc_column_text]
+[/vc_column_text][/vc_column][/vc_row][vc_row full_width="stretch_row_content_no_spaces" type="full_width_background" bg_position="center center" bg_repeat="no-repeat" parallax_bg="" overlay="" video_bg="" text_color="dark" transparency="" borders="" arrow_bottom="" arrow_top="" el_id="dgk-request" class="dgk-request" bg_color="#eae7de"][vc_column width="1/1" enable_animation="" animation="none" centered_cont="" centered_cont_vertical="" column_padding="" background_color="" background_color_opacity="1" background_image="" font_color="" el_class=""][contact-form-7 id="91" title="Request a Delivery"][/vc_column][/vc_row]

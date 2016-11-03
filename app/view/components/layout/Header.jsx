@@ -5,7 +5,8 @@ import React from "react";
 
 //Import utility components
 
-//Import scss styles
+////Import scss styles
+//import "./header.scss";
 
 // Initiate Header class
 export default class Header extends React.Component {
@@ -14,28 +15,31 @@ export default class Header extends React.Component {
             <div className="header wrapper">
                 <ul className="social-bar">
                     <li>
-                        <a href="" herf="">
-                            <i>Facebook</i>
+                        <a href="">
+                            <i className="fa fa-facebook fa-2x"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="" herf="">
-                            <i>Twitter</i>
+                        <a href="" >
+                            <i className="fa fa-twitter fa-2x"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="" herf="">
-                            <i>Instagram</i>
+                        <a href="">
+                            <i className="fa fa-instagram fa-2x"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="" herf="">
-                            <i>Email</i>
+                        <a href="">
+                            <i className="fa fa-envelope fa-2x"></i>
                         </a>
                     </li>
                 </ul>
                 <div className="header-logo-container">
-                    <img className="header-logo" src="img/autowatch-logo-white@1x.png" alt="AutoWatch Logo"/>
+                    <img className="header-logo" src="img/autowatch-logo@1x.png" alt="AutoWatch Logo"/>
+                </div>
+                <div className="header-right">
+                    <img className="menu-icon" src="img/menu-icon.png" alt="menu-icon"/>
                 </div>
                 
             </div>           
